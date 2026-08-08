@@ -16,8 +16,8 @@ app.use((req, res, next) => {
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/download', (req, res) => {
-  const file = path.join(__dirname, 'public', 'downloads', 'JamItDa-Setup-v0.1-beta.exe');
-  res.download(file, 'JamItDa-Setup-v0.1-beta.exe');
+  const file = path.join(__dirname, 'public', 'downloads', 'jamitda.exe');
+  res.download(file, 'jamitda.exe');
 });
 
 app.listen(PORT, () => {
